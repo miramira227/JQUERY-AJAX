@@ -1,0 +1,41 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: orange;
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    margin-top: 20px;
+}
+
+h3{
+    color: indianred;
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+}
+
+p{
+    color: darkorange;
+    text-align: center;
+}
+
+.btn{
+    background-color: lightcoral;
+    color: blanchedalmond;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    max-height: 80%;
+}
+
+img{
+    border: 3px solid lightsalmon;
+    border-radius: 20px;
+}

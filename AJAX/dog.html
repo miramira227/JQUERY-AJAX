@@ -1,0 +1,33 @@
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap&subset=korean" rel="stylesheet">
+    <link rel='stylesheet' href='dog.css' >
+</head>
+<body>
+    <h1>마지막 과제라니.. 아쉽네요</h1>
+    <h3>(는 그짓말.. 이거도 겨우했슴다..)</h3>
+    <p>댕댕아 나와랏!</p>
+    <button class='btn' type='submit'>멍멍멍왈왈크르르르르</button>
+    <div class='imageContainer'>
+        <img src="">
+    </div>
+
+<script>
+     
+    $('.btn').click(function() {
+        $.ajax({
+            url: 'https://dog.ceo/api/breeds/image/random',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data){
+                let imageUrl = data.message  
+                $('.imageContainer img').attr('src',imageUrl)
+                }    
+        })
+        })
+</script>
+</body>
